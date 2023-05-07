@@ -7,7 +7,7 @@ function sleep(ms) {
 }
 
 function random() {
-    return Math.floor(Math.random() * 10000)
+    return Math.floor(Math.random() * 7000)
 }
 
 let xcount = 0
@@ -40,7 +40,7 @@ function tellTime() {
 async function starting() {
     xcount = 0
     changeAttBtn("Red", 'Espere...')
-    await sleep(random());
+    await sleep(random()+3000);
     stop();
 }
 
